@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Landing panel</title>
     <link href="img/favicon_mediametrie.png" rel="icon">
@@ -14,16 +15,14 @@
 <body>
 
 <!--- MENU -->
-<nav class="navbar navbar-expand-sm fixed-top">
+<nav id="menu" class="navbar navbar-expand-sm fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <a href="https://www.mediametrie.fr/" target="_blank"><img id="logo_menu"
                                                                        src="img/logo_mediametrie.png"></a>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <div class="navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#accueil">Accueil</a>
@@ -41,6 +40,37 @@
         </div>
     </div>
 </nav>
+
+<!-- MENU MOBILE -->
+<div id="menu_mobile">
+<nav class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img id="logo_menu_mobile"
+             src="img/logo_mediametrie.png">
+    </div>
+</nav>
+    <div class="collapse " id="navbarToggleExternalContent">
+        <div id="item_menu_mobile" class="p-4">
+            <ul>
+                <li>
+                    <a href="#accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#role">Votre rôle</a>
+                </li>
+                <li>
+                    <a c href="#about">Qui sommes-nous</a>
+                </li>
+                <li>
+                    <a  href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <!--- ACCUEIL -->
 <div id="accueil" class="container-fluid">
