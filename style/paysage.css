@@ -15,6 +15,10 @@
     }
 
     /* MENU */
+    #menu_mobile {
+        display: none;
+    }
+
     #logo_menu {
         width: 5vw;
         height: auto;
@@ -116,7 +120,8 @@
     }
 
     .video {
-        height: 50vh;
+        width: 100%;
+        height: auto;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -35%);

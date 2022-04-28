@@ -43,10 +43,33 @@
         width: auto;
     }
 
-    .navbar {
-        border-bottom: lightgray 1px solid;
-        background-color: white;
-        z-index: 10000;
+    #menu {
+        display: none;
+    }
+
+    #logo_menu_mobile {
+        width: 20vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #navbarToggleExternalContent {
+        background-color: #86BC25;
+    }
+
+    #item_menu_mobile {
+        text-align: center;
+        font-family: Mediametrie, sans-serif;
+    }
+
+    #item_menu_mobile a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #item_menu_mobile ul {
+        list-style: none;
     }
 
     /* ACCUEIL */
