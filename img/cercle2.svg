@@ -1,0 +1,23 @@
+<svg width="2500" height="2500" viewBox="0 0 2500 2500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_236_228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="2500" height="2500">
+<circle cx="1250" cy="1250" r="1250" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_236_228)">
+<path d="M-2.50781 1165L3454.99 1165V2500L-2.50781 2500L-2.50781 1165Z" fill="#6B981B"/>
+<path d="M3145.02 1250L-312.481 1250L-312.481 -85.0005L3145.02 -85.0003L3145.02 1250Z" fill="#86BC25"/>
+</g>
+<mask id="mask1_236_228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="2500" height="2500">
+<circle cx="1250" cy="1250" r="1250" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1_236_228)">
+<path d="M-2.50781 1165L3454.99 1165V2500L-2.50781 2500L-2.50781 1165Z" fill="#6B981B"/>
+<path d="M3145.02 1250L-312.481 1250L-312.481 -85.0005L3145.02 -85.0003L3145.02 1250Z" fill="#86BC25"/>
+</g>
+<mask id="mask2_236_228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="500" y="500" width="1500" height="1500">
+<circle cx="1250" cy="1250" r="750" transform="rotate(180 1250 1250)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask2_236_228)">
+<path d="M2001.51 1301L-72.9943 1301V499.998L2001.51 499.998L2001.51 1301Z" fill="#6B981B"/>
+<path d="M112.988 1250L2187.49 1250L2187.49 2051L112.988 2051L112.988 1250Z" fill="#86BC25"/>
+</g>
+</svg>

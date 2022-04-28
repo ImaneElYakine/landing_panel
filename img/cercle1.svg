@@ -1,0 +1,23 @@
+<svg width="1500" height="1500" viewBox="0 0 1500 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_239_347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1500" height="1500">
+<circle cx="750" cy="750" r="750" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_239_347)">
+<path d="M-1.50586 699.002L2072.99 699.002V1500L-1.50586 1500L-1.50586 699.002Z" fill="#9F1A76"/>
+<path d="M1887.01 750L-187.489 750L-187.489 -51.0003L1887.01 -51.0001L1887.01 750Z" fill="#6F1052"/>
+</g>
+<mask id="mask1_239_347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1500" height="1500">
+<circle cx="750" cy="750" r="750" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1_239_347)">
+<path d="M-1.50586 699.002L2072.99 699.002V1500L-1.50586 1500L-1.50586 699.002Z" fill="#9F1A76"/>
+<path d="M1887.01 750L-187.489 750L-187.489 -51.0003L1887.01 -51.0001L1887.01 750Z" fill="#C72294"/>
+</g>
+<mask id="mask2_239_347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="300" y="300" width="900" height="900">
+<circle cx="750" cy="750" r="450" transform="rotate(180 750 750)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask2_239_347)">
+<path d="M1200.9 780.599L-43.7959 780.599V299.999L1200.9 299.999V780.599Z" fill="#9F1A76"/>
+<path d="M67.793 750L1312.49 750L1312.49 1230.6L67.793 1230.6L67.793 750Z" fill="#C72294"/>
+</g>
+</svg>
