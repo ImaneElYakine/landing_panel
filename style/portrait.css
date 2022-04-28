@@ -59,8 +59,8 @@
     }
 
     #item_menu_mobile {
-        text-align: center;
         font-family: Mediametrie, sans-serif;
+        text-align: center;
     }
 
     #item_menu_mobile a {
@@ -70,6 +70,12 @@
 
     #item_menu_mobile ul {
         list-style: none;
+        padding: 0;
+    }
+
+    #item_menu_mobile li {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
     }
 
     /* ACCUEIL */
