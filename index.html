@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
     <title>Landing panel</title>
     <link href="img/favicon_mediametrie.png" rel="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/paysage.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style/portrait.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <link href="style/paysage.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="style/portrait.css" rel="stylesheet">
 
 </head>
 <body>
 
 <!--- MENU -->
-<nav id="menu" class="navbar navbar-expand-sm fixed-top">
+<nav class="navbar navbar-expand-sm fixed-top" id="menu">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <a href="https://www.mediametrie.fr/" target="_blank"><img id="logo_menu"
@@ -43,15 +52,17 @@
 
 <!-- MENU MOBILE -->
 <div id="menu_mobile">
-<nav class="navbar">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <img id="logo_menu_mobile"
-             src="img/logo_mediametrie.png">
-    </div>
-</nav>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <button aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarToggleExternalContent" data-bs-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img id="logo_menu_mobile"
+                 src="img/logo_mediametrie.png">
+        </div>
+    </nav>
     <div class="collapse " id="navbarToggleExternalContent">
         <div id="item_menu_mobile">
             <ul>
@@ -65,7 +76,7 @@
                     <a href="#about">Qui sommes-nous</a>
                 </li>
                 <li>
-                    <a  href="#contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -73,9 +84,9 @@
 </div>
 
 <!--- ACCUEIL -->
-<div id="accueil" class="container-fluid">
+<div class="container-fluid" id="accueil">
     <div class="row">
-        <div id="accueil_presentation" class="col-6">
+        <div class="col-6" id="accueil_presentation">
             <div id="accueil_texte">
                 <div id="accueil_titre">Devenez un acteur<br> du monde des médias</div>
                 <p>Rejoindre les panels Médiamétrie, c’est possèder un<br> pouvoir décisif sur les contenus et les
@@ -84,7 +95,7 @@
             </div>
         </div>
         <img id="cercle1" src="img/cercle1.svg">
-        <div id="accueil_photo" class="col-6">
+        <div class="col-6" id="accueil_photo">
             <img src="img/accueil.jpg">
         </div>
     </div>
@@ -92,7 +103,7 @@
 </div>
 
 <!--- ACCUEIL MOBILE -->
-<div id="accueil_mobile" class="container-fluid">
+<div class="container-fluid" id="accueil_mobile">
     <div class="row">
         <div id="accueil_presentation_mobile">
             <div id="accueil_texte_mobile">
@@ -103,35 +114,104 @@
             </div>
         </div>
     </div>
-    <div id="accueil_photo_mobile" class="row">
+    <div class="row" id="accueil_photo_mobile">
         <img src="img/accueil.jpg">
     </div>
 
 </div>
 
 <!--- VOTRE RÔLE -->
-<div id="role" class="container-fluid">
+<div class="container-fluid" id="role">
     <p id="titre_role">Votre rôle</p>
     <div id="texte_role">Visionnez notre courte vidéo pour comprendre le rôle d’un paneliste chez Médiamétrie et
         l’utilité que vous pouvez apporter en rejoignant l’aventure.
     </div>
-    <video id="video" controls class="video">
-        <source src="video/jeune.mp4" type=video/mp4>
-    </video>
+
+    <!-- Début du carousel des vidéos -->
+    <div
+            class="carousel slide carousel-fade"
+            data-mdb-ride="carousel"
+            id="carouselVideoExample"
+    >
+
+        <!-- Vidéos -->
+        <div class="carousel-inner">
+            <!-- Vidéo 1 -->
+            <div class="carousel-item active">
+                <video id="video1" class="img-fluid" controls>
+                    <source src="video/jeune.mp4#t=1" type="video/mp4"/>
+                </video>
+                <div class="titre_video d-none d-md-block">
+                    <p>
+                        Deviens panéliste : 6 choses à savoir
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vidéo 2 -->
+            <div class="carousel-item">
+                <video class="img-fluid" controls>
+                    <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4"/>
+                </video>
+                <div class="titre_video d-none d-md-block">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vidéo 3 -->
+            <div class="carousel-item">
+                <video class="img-fluid" controls>
+                    <source
+                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                            type="video/mp4"
+                    />
+                </video>
+                <div class="titre_video d-none d-md-block">
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fleches avant et après -->
+        <button
+                class="carousel-control-prev"
+                data-mdb-slide="prev"
+                data-mdb-target="#carouselVideoExample"
+                type="button"
+        >
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+                class="carousel-control-next"
+                data-mdb-slide="next"
+                data-mdb-target="#carouselVideoExample"
+                type="button"
+        >
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fin du carousel des vidéos -->
+
+
 </div>
 
 
 <!--- QUI SOMMES-NOUS -->
-<div id="about" class="container-fluid">
+<div class="container-fluid" id="about">
     <p id="titre_about">Qui sommes-nous</p>
     <div id="texte_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis felis urna, quis
         tincidunt mi fringilla eu. Cras scelerisque, ex in ultricies euismod, massa diam tincidunt tortor, ac rutrum
         dolor metus at dolor. Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Suspendisse in bibendum
         nibh. Aenean accumsan maximus sem ac dignissim.
     </div>
-    <div id="infos_about" class="card-group">
+    <div class="card-group" id="infos_about">
         <div class="card ">
-            <img src="img/picto1.svg" class="card-img-top" alt="...">
+            <img alt="..." class="card-img-top" src="img/picto1.svg">
             <div class="card-body">
                 <h5 class="card-title">Lorem ipsum </h5>
                 <p class="card-text">Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem,
@@ -140,7 +220,7 @@
             </div>
         </div>
         <div class="card ">
-            <img src="img/picto2.svg" class="card-img-top" alt="...">
+            <img alt="..." class="card-img-top" src="img/picto2.svg">
             <div class="card-body">
                 <h5 class="card-title">Lorem ipsum </h5>
                 <p class="card-text">TNunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem,
@@ -149,7 +229,7 @@
             </div>
         </div>
         <div class="card ">
-            <img src="img/picto3.svg" class="card-img-top" alt="...">
+            <img alt="..." class="card-img-top" src="img/picto3.svg">
             <div class="card-body">
                 <h5 class="card-title">Lorem ipsum </h5>
                 <p class="card-text">Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem,
@@ -164,7 +244,8 @@
 <!--- QUI SOMMES-NOUS MOBILE -->
 <div id="about_mobile">
     <p id="titre_about_mobile">Qui sommes-nous</p>
-    <div id="texte_about_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis felis urna, quis
+    <div id="texte_about_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis felis urna,
+        quis
         tincidunt mi fringilla eu. Cras scelerisque, ex in ultricies euismod, massa diam tincidunt tortor, ac rutrum
         dolor metus at dolor. Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Suspendisse in bibendum
         nibh. Aenean accumsan maximus sem ac dignissim.
@@ -173,15 +254,19 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><div class="card ">
-                <img src="img/picto1.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum </h5>
-                    <p class="card-text">Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem,
-                        maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem, maximus vitae sem eget, luctus
-                        sagittis ipsum. </p>
+            <div class="swiper-slide">
+                <div class="card ">
+                    <img alt="..." class="card-img-top" src="img/picto1.svg">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum </h5>
+                        <p class="card-text">Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Nunc metus
+                            sem,
+                            maximus vitae sem eget, luctus sagittis ipsum. Nunc metus sem, maximus vitae sem eget,
+                            luctus
+                            sagittis ipsum. </p>
+                    </div>
                 </div>
-            </div></div>
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
         </div>
@@ -191,24 +276,24 @@
 </div>
 
 <!--- CONTACT -->
-<div id="contact" class="container-fluid">
+<div class="container-fluid" id="contact">
     <p id="titre_contact">Contact</p>
     <div id="texte_contact">Rentrez-vos coordonnées et notre équipe vous recontactera dans les meilleurs délais.</div>
     <form id="formulaire">
         <div class="row">
             <div class="col">
-                <label for="nom" class="form-label">Nom*</label>
-                <input required id="nom" type="text" class="form-control" placeholder="Nom" name="nom">
+                <label class="form-label" for="nom">Nom*</label>
+                <input class="form-control" id="nom" name="nom" placeholder="Nom" required type="text">
             </div>
             <div class="col">
-                <label for="prenom" class="form-label">Prénom*</label>
-                <input required id="prenom" type="text" class="form-control" placeholder="Prénom" name="prenom">
+                <label class="form-label" for="prenom">Prénom*</label>
+                <input class="form-control" id="prenom" name="prenom" placeholder="Prénom" required type="text">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <label for="horaire" class="form-label">Plage horaire pour être rappelé*</label>
-                <select required class="form-control" id="horaire">
+                <label class="form-label" for="horaire">Plage horaire pour être rappelé*</label>
+                <select class="form-control" id="horaire" required>
                     <option selected>Sélectionner</option>
                     <option value="1">16h-17h</option>
                     <option value="2">17h-18h</option>
@@ -217,15 +302,15 @@
                 </select>
             </div>
             <div class="col">
-                <label for="tel" class="form-label">Numéro de téléphone*</label>
-                <input required id="tel" type="" class="form-control" name="tel">
+                <label class="form-label" for="tel">Numéro de téléphone*</label>
+                <input class="form-control" id="tel" name="tel" required type="">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <label for="message" class="form-label">Message</label>
-                <textarea required rows="1" id="message" type="text" class="form-control" placeholder="Message"
-                          name="message"></textarea>
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Message" required rows="1"
+                          type="text"></textarea>
             </div>
         </div>
         <div class="row">
@@ -235,7 +320,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <button id="bouton" type="submit" class="btn btn-primary">Envoyer</button>
+                <button class="btn btn-primary" id="bouton" type="submit">Envoyer</button>
             </div>
         </div>
 
@@ -246,12 +331,17 @@
 
 
 <!-- JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- MDB -->
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+        type="text/javascript"
+></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
