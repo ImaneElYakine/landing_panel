@@ -121,7 +121,7 @@
     }
 
     .carousel {
-        width: 50vw;
+        width: 45vw;
         height: auto;
         top: 35%;
         left: 50%;
@@ -138,13 +138,21 @@
     .carousel-control-next, .carousel-control-next:hover, .carousel-control-next:focus,
     .carousel-control-prev,.carousel-control-prev:hover, .carousel-control-prev:focus {
         color: black;
+        height: 20vh;
+    }
+
+    .carousel-control-next, .carousel-control-prev  {
+        position: absolute;
+        top: 40%;
+        -ms-transform: translateY(-40%);
+        transform: translateY(-40%);
     }
 
 
     /* QUI SOMMES NOUS */
     #about {
         background-color: white;
-        height: 100vh;
+        height: 80vh;
     }
 
     #about_mobile {
@@ -170,11 +178,6 @@
         top: 10vh;
     }
 
-    .card-title {
-        text-align: center;
-        font-size: 1.25vw;
-        font-weight: bold;
-    }
 
     .card-text {
         text-align: center;
@@ -214,6 +217,8 @@
     #contact {
         height: 20vh;
     }
+
+    #contact_mobile { display: none}
 
     #titre_contact {
         text-align: center;
@@ -326,6 +331,33 @@
 
     #image_footer {
         width: 100vw;
+    }
+    
+    #footer {
+        position: relative;
+    }
+
+    #image_footer_mobile {
+        display: none;
+    }
+
+    #cercle_mobile {
+        display: none;
+    }
+
+    #lien_email {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        z-index: 9999;
+        color: white;
+        font-weight: bold;
+        font-size: 3vh;
+    }
+
+    #footer a {
+        color: white;
+        text-decoration: underline;
     }
 
 }
