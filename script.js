@@ -1,4 +1,8 @@
+const size = [window.width, window.height];  //public variable
 
+$(window).resize(function(){
+    window.resizeTo(size[0],size[1]);
+});
 
 // Evenement sur le scroll pour la rotation des cercles
 window.onscroll = function () {
