@@ -1,4 +1,4 @@
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
     html {
         margin: 0;
     }
