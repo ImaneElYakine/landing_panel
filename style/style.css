@@ -33,6 +33,10 @@ body {
     margin-right: 2vw;
 }
 
+.navbar ul {
+    text-align: center;
+}
+
 .navbar a {
     color: black;
     font-size: 1.15vw;
@@ -76,12 +80,12 @@ body {
     padding-top: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    font-size: 1.5vmax;
+    font-size: 1.15vw;
 }
 
 #accueil_titre {
     font-weight: bold;
-    font-size: 2.75vmax;
+    font-size: 2.25vmax;
 }
 
 @media screen and (max-width: 768px) {
@@ -129,12 +133,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    video{
+    .video{
         left: 50%;
         transform: translateX(-50%);
         position: relative;
         margin-bottom: 10vh;
-        padding:100% 0 0 0;
+        padding:50% 0 0 0;
     }
 
     #titre_role {
@@ -177,6 +181,7 @@ body {
     box-shadow: none;
     border: 1px solid lightgrey;
     font-size: 1.15vw;
+    height: 30vw;
 }
 
 .card-img-top {
@@ -219,16 +224,21 @@ body {
         box-shadow: none;
         border: 1px solid lightgrey;
         font-size: 2vh;
+        height: 50vh;
     }
 
     .card-img-top {
         border-radius: 0;
         position: relative;
-        height: 50%;
+        height: 50vh;
     }
 
     .swiper-pagination-bullet-active {
         background-color: #86BC25;
+    }
+
+    .swiper-slide {
+        height: 55vh;
     }
 }
 
