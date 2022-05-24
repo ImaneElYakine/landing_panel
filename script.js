@@ -13,9 +13,10 @@ function scrollRotate() {
 
 // Swiper pour la version mobile de la section Le Panel
 const swiper = new Swiper('.swiper', {
-    // configure Swiper to use modules
-
     pagination: {
         el: '.swiper-pagination',
+    },
+    autoplay: {
+        delay: 4000,
     }
 });
