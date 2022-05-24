@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
     <meta charset="UTF-8">
     <title>Landing panel</title>
     <link href="img/favicon_mediametrie.png" rel="icon">
@@ -16,23 +16,32 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             rel="stylesheet"
     />
-    <link href="style/paysage.css" rel="stylesheet">
     <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
-    <link href="style/portrait.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+
 
 </head>
 <body>
 
 <!--- MENU -->
-<nav class="navbar navbar-expand-sm fixed-top" id="menu">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <!-- Container wrapper -->
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <a href="https://www.mediametrie.fr/" target="_blank"><img id="logo_menu"
-                                                                       src="img/logo_mediametrie.png"></a>
-        </a>
 
-        <div class="navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
+        <!-- Navbar brand -->
+        <a href="https://www.mediametrie.fr/" target="_blank"><img id="logo_menu" src="img/logo_mediametrie.png"></a>
+
+        <!-- Toggle button -->
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-mdb-target="#navbarSupportedContent" data-mdb-toggle="collapse"
+                type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#accueil">Accueil</a>
                 </li>
@@ -40,263 +49,160 @@
                     <a class="nav-link" href="#role">Votre rôle</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Qui sommes-nous</a>
+                    <a class="nav-link" href="#about">Le panel</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
+
         </div>
     </div>
+    <!-- Container wrapper -->
 </nav>
-
-<!-- MENU MOBILE -->
-<div id="menu_mobile">
-    <nav class="navbar">
-        <div class="container-fluid">
-            <button aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler" data-bs-target="#navbarToggleExternalContent" data-bs-toggle="collapse"
-                    type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <img id="logo_menu_mobile"
-                 src="img/logo_mediametrie.png">
-        </div>
-    </nav>
-    <div class="collapse " id="navbarToggleExternalContent">
-        <div id="item_menu_mobile">
-
-
-            <a href="#accueil">Accueil</a>
-
-            <a href="#role">Votre rôle</a>
-
-            <a href="#about">Qui sommes-nous</a>
-
-            <a href="#contact">Contact</a>
-
-
-        </div>
-    </div>
-</div>
+<!-- Navbar -->
 
 <!--- ACCUEIL -->
 <div class="container-fluid" id="accueil">
     <div class="row">
-        <div class="col-6" id="accueil_presentation">
+        <div class="col-md-6">
             <div id="accueil_texte">
-                <div id="accueil_titre">Devenez un acteur<br> du monde des médias</div>
-                <p>Rejoindre les panels Médiamétrie, c’est posséder un<br> pouvoir décisif sur les contenus et les
-                    programmes<br> médiatiques en France. </p>
-                <p>Scrollez pour en savoir plus sur l’aventure.</p>
+                <div id="accueil_titre"><p>Devenez un acteur du monde des médias</p></div>
+                <p>Rejoindre les panels Médiamétrie, c’est posséder un pouvoir décisif sur les contenus et les
+                    programmes médiatiques en France. </p>
+                <p>Scrollez pour en savoir plus.</p>
             </div>
         </div>
-        <img id="cercle1" src="img/cercle1.svg">
-        <div class="col-6" id="accueil_photo">
-            <img src="img/accueil.jpg">
-        </div>
-    </div>
-    <img id="cercle2" src="img/cercle2.svg">
-</div>
 
-<!--- ACCUEIL MOBILE -->
-<div class="container-fluid" id="accueil_mobile">
-    <div class="row">
-        <div id="accueil_presentation_mobile">
-            <div id="accueil_texte_mobile">
-                <div id="accueil_titre_mobile">Devenez un acteur<br> du monde des médias</div>
-                <p>Rejoindre les panels Médiamétrie, c’est possèder un<br> pouvoir décisif sur les contenus et les
-                    programmes<br> médiatiques en France. </p>
-                <p>Scrollez pour en savoir plus sur l’aventure.</p>
-            </div>
-        </div>
+        <div class="col-md-6"><img id="accueil_photo" src="img/accueil.jpg"></div>
     </div>
-    <div class="row" id="accueil_photo_mobile">
-        <img src="img/accueil.jpg">
-    </div>
-
 </div>
 
 <!--- VOTRE RÔLE -->
 <div class="container-fluid" id="role">
-    <p id="titre_role">Votre rôle</p>
-    <div id="texte_role">Visionnez notre courte vidéo pour comprendre le rôle d’un paneliste chez Médiamétrie et
-        l’utilité que vous pouvez apporter en rejoignant l’aventure.
+    <div class="row">
+        <div class="col">
+            <p id="titre_role">Votre rôle</p>
+        </div>
     </div>
-
-    <!-- Début du carousel des vidéos -->
-    <div
-            class="carousel slide carousel-fade"
-            data-mdb-ride="carousel"
-            id="carouselVideoExample"
-    >
-
-        <!-- Vidéos -->
-        <div class="carousel-inner">
-            <!-- Vidéo 1 -->
-            <div class="carousel-item active">
-                <video class="img-fluid" controls id="video1">
-                    <source src="video/jeune.mp4#t=1" type="video/mp4"/>
-                </video>
-                <div class="titre_video d-none d-md-block">
-                    <p>
-                        Deviens panéliste : 6 choses à savoir
-                    </p>
-                </div>
-            </div>
-
-            <!-- Vidéo 2 -->
-            <div class="carousel-item">
-                <video class="img-fluid" controls>
-                    <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4"/>
-                </video>
-                <div class="titre_video d-none d-md-block">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Vidéo 3 -->
-            <div class="carousel-item">
-                <video class="img-fluid" controls>
-                    <source
-                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
-                            type="video/mp4"
-                    />
-                </video>
-                <div class="titre_video d-none d-md-block">
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </div>
+    <div class="row">
+        <div class="col">
+            <div id="texte_role">Visionnez notre courte vidéo pour comprendre le rôle d’un paneliste chez Médiamétrie et
+                l’utilité que vous pouvez apporter en rejoignant l’aventure.
             </div>
         </div>
-        <!-- Fleches avant et après -->
-        <button
-                class="carousel-control-prev"
-                data-mdb-slide="prev"
-                data-mdb-target="#carouselVideoExample"
-                type="button"
-        >
-            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-                class="carousel-control-next"
-                data-mdb-slide="next"
-                data-mdb-target="#carouselVideoExample"
-                type="button"
-        >
-            <span aria-hidden="true" class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <!-- Fin du carousel des vidéos -->
-
-
+    <div class="row">
+        <div class="col">
+            <div class="video"><iframe src="https://player.vimeo.com/video/657378910?h=b6dbb128bf" style="position:absolute;top:0;left:50%;width:100%;height:100%; transform: translateX(-50%);" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </div>
 </div>
 
-
-<!--- QUI SOMMES-NOUS -->
+<!--- LE PANEL -->
 <div class="container-fluid" id="about">
-    <p id="titre_about">Qui sommes-nous</p>
-    <div id="texte_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis felis urna, quis
-        tincidunt mi fringilla eu. Cras scelerisque, ex in ultricies euismod, massa diam tincidunt tortor, ac rutrum
-        dolor metus at dolor. Nunc metus sem, maximus vitae sem eget, luctus sagittis ipsum. Suspendisse in bibendum
-        nibh. Aenean accumsan maximus sem ac dignissim.
+    <div class="row">
+        <div class="col">
+            <p id="titre_about">Votre participation au panel Radio & TV de Médiamétrie</p>
+        </div>
     </div>
-    <div class="card-group" id="infos_about">
-        <div class="card ">
-            <img alt="..." class="card-img-top" src="img/picto1.svg">
-            <div class="card-body">
-                <p class="card-text">Gagner entre 5 et 20 €/mois et échangez-les contre des chèques cadeaux. </p>
-            </div>
-        </div>
-        <div class="card ">
-            <img alt="..." class="card-img-top" src="img/picto2.svg">
-            <div class="card-body">
-                <p class="card-text">Un petit appareil discret à porter chaque jour sur vous pour une mesure d’audience
-                    automatique. </p>
-            </div>
-        </div>
-        <div class="card ">
-            <img alt="..." class="card-img-top" src="img/picto3.svg">
-            <div class="card-body">
-                <p class="card-text">Une équipe sympathique dédiée pour vous accompagner …et des communications
-                    régulières sur l’actualité de votre panel et la vie des média. </p>
+    <div class="row">
+        <div class="col">
+            <div id="texte_about">
+                <p>Pour mesurer l’audience de la radio et de la télévision, nous recrutons des panélistes, représentant l’ensemble de la population française, qui participent à l’aide d’un audimètre portable (à porter chaque jour sur soi) et d’un audimètre fixe (à installer près de sa télévision).</p>
+                <p>Ces audimètres permettent de détecter tous les signaux émis par les stations de radio et les chaines de TV. C’est grâce à ces informations que les acteurs TV et radio peuvent connaitre les préférences du public et contribuer à faire évoluer les programmes.</p>
             </div>
         </div>
     </div>
-    <img id="cercle4" src="img/cercle4.svg">
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="card_groupe_desktop">
+        <div class="col">
+            <div class="card">
+                <img alt="Hollywood Sign on The Hill" class="card-img-top" src="img/picto1.jpg"/>
+                <div class="card-body">
+                    <p class="card-text">
+                        Gagner entre 5 et 20 €/mois et échangez-les contre des chèques cadeaux.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img alt="Palm Springs Road" class="card-img-top" src="img/picto2.jpg"/>
+                <div class="card-body">
+                    <p class="card-text">
+                        Un petit appareil à porter chaque jour sur vous pour une mesure d’audience
+                        automatique.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/picto3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Une équipe sympathique dédiée pour vous accompagner …et des communications régulières sur l’actualité de votre panel et la vie des média.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- MOBILE -->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="card_groupe_mobile">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <img alt="..." class="card-img-top" src="img/picto1.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Gagner entre 5 et 20 €/mois et échangez-les contre des chèques cadeaux.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <img alt="..." class="card-img-top" src="img/picto2.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Un petit appareil discret à porter chaque jour sur vous pour une mesure d’audience
+                                automatique. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <img alt="..." class="card-img-top" src="img/picto3.png">
+                        <div class="card-body">
+                            <p class="card-text">Une équipe sympathique dédiée pour vous accompagner …et des communications
+                                régulières sur l’actualité de votre panel et la vie des média. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 </div>
-
-<!--- QUI SOMMES-NOUS MOBILE -->
-<div id="about_mobile">
-    <p id="titre_about_mobile">Qui sommes-nous</p>
-    <div id="texte_about_mobile">
-        <p>Pour mesurer l’audience de la radio et de la télévision, nous recrutons des panélistes, représentant
-            l’ensemble de la population française, qui participent à l’aide d’un audimètre portable (à porter chaque
-            jour sur soi) et d’un audimètre fixe (à installer près de sa télévision).</p>
-        <p>Ces audimètres permettent de détecter tous les signaux émis par les stations de radio et les chaines de TV.
-            C’est grâce à ces informations que les acteurs TV et radio peuvent connaitre les préférences du public et
-            contribuer à faire évoluer les programmes.</p>
-
-    </div>
-
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="card ">
-                    <img alt="..." class="card-img-top" src="img/picto1.svg">
-                    <div class="card-body">
-                        <p class="card-text">Gagner entre 5 et 20 €/mois et échangez-les contre des chèques cadeaux.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card ">
-                    <img alt="..." class="card-img-top" src="img/picto2.svg">
-                    <div class="card-body">
-                        <p class="card-text">Un petit appareil discret à porter chaque jour sur vous pour une mesure d’audience
-                            automatique. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card ">
-                    <img alt="..." class="card-img-top" src="img/picto3.svg">
-                    <div class="card-body">
-                        <p class="card-text">Une équipe sympathique dédiée pour vous accompagner …et des communications
-                            régulières sur l’actualité de votre panel et la vie des média. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-</div>
-<img id="cercle_mobile" src="img/cercle4.svg">
 
 <!--- CONTACT -->
 <div class="container-fluid" id="contact">
-    <p id="titre_contact">Contact</p>
-    <div id="texte_contact">Rentrez-vos coordonnées et notre équipe vous recontactera dans les meilleurs délais.</div>
+    <div id="texte_participation">
+        <p>Vous souhaitez participer à l’aventure Médiamétrie ?</p>
+        Rentrez-vos coordonnées et notre équipe vous recontactera dans les meilleurs délais.
+    </div>
     <form id="formulaire">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col">
                 <label class="form-label" for="nom">Nom*</label>
                 <input class="form-control" id="nom" name="nom" placeholder="Nom" required type="text">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+        </div>
+        <div class="row">
+            <div class="col">
                 <label class="form-label" for="prenom">Prénom*</label>
                 <input class="form-control" id="prenom" name="prenom" placeholder="Prénom" required type="text">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col">
                 <label class="form-label" for="horaire">Plage horaire pour être rappelé*</label>
                 <select class="form-control" id="horaire" required>
                     <option selected>Sélectionner</option>
@@ -306,9 +212,11 @@
                     <option value="4">19h-20h</option>
                 </select>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+        </div>
+        <div class="row">
+            <div class="col">
                 <label class="form-label" for="tel">Numéro de téléphone*</label>
-                <input class="form-control" id="tel" name="tel" required type="">
+                <input class="form-control" id="tel" name="tel" disabled inputmode="tel" value="0122334455">
             </div>
         </div>
         <div class="row">
@@ -328,20 +236,29 @@
                 <button class="btn btn-primary" id="bouton" type="submit">Envoyer</button>
             </div>
         </div>
-
     </form>
 </div>
 
-
-
-<div id="footer">
-    <img id="image_footer" src="img/footer.svg">
-    <img id="image_footer_mobile" src="img/footer_mobile.svg">
+<!--- FOOTER -->
+<div id="footer_desktop">
     <div id="lien_email">
-    <p>D’autres questions ?</p>
-    <a href="mailto:exemple@mediametrie.fr">exemple@mediametrie.fr</a>
+        <p>Vous avez encore des questions ? <br> Contactez-nous</p>
+        <a href="mailto:exemple@mediametrie.fr">exemple@mediametrie.fr</a>
+    </div>
+    <img id="image_footer_desktop" src="img/footer.svg">
 </div>
+
+<div id="footer_mobile">
+    <div id="lien_email_mobile">
+        <p>Des questions ? Contactez-nous : <a href="mailto:exemple@mediametrie.fr">exemple@mediametrie.fr</a></p>
+
+    </div>
+    <img id="image_footer_mobile" src="img/footer_mobile.svg">
 </div>
+
+<!--- CERCLES -->
+<img id="cercle1" src="img/cercle1.svg">
+<img id="cercle2" src="img/cercle2.svg">
 
 <!-- JS -->
 <script crossorigin="anonymous"
@@ -357,6 +274,5 @@
 ></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>

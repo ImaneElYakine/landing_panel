@@ -1,14 +1,7 @@
-const size = [window.width, window.height];  //public variable
-
-$(window).resize(function(){
-    window.resizeTo(size[0],size[1]);
-});
-
 // Evenement sur le scroll pour la rotation des cercles
 window.onscroll = function () {
     scrollRotate();
 };
-
 
 // Fonction qui anime les différents cercles
 function scrollRotate() {
@@ -18,7 +11,7 @@ function scrollRotate() {
     document.getElementById("cercle_mobile").style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
 }
 
-
+// Swiper pour la version mobile de la section Le Panel
 const swiper = new Swiper('.swiper', {
     // configure Swiper to use modules
 
