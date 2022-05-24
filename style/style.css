@@ -27,6 +27,8 @@ body {
     background-color: white;
     z-index: 10000;
     box-shadow: none;
+    position: fixed;
+    width: 100vw;
 }
 
 .navbar li {
@@ -150,7 +152,6 @@ body {
         padding-left: 5vw;
         padding-right: 5vw;
     }
-
 }
 
 /* LE PANEL */
