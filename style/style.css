@@ -209,6 +209,8 @@ body {
 
     #titre_about {
         font-size: 3vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     #texte_about {
