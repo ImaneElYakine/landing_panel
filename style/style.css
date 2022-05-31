@@ -515,7 +515,7 @@ select:active, select:focus, select:active:focus, select.active:focus {
         text-align: center;
         z-index: 999;
         position: absolute;
-        top: 60%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
     }
