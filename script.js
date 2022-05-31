@@ -20,3 +20,10 @@ const swiper = new Swiper('.swiper', {
         delay: 4000,
     }
 });
+
+// Affichage d'un message lors de l'envoi du formulaire de contact
+let form = document.getElementsByTagName("form")[0];
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.getElementById("form_message").style.display = "block";
+});
