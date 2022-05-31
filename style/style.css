@@ -234,6 +234,7 @@ body {
         border-radius: 0;
         position: relative;
         height: 50vh;
+
     }
 
     .swiper-pagination-bullet-active {
@@ -361,6 +362,18 @@ select:active, select:focus, select:active:focus, select.active:focus {
     box-shadow: none !important;
 }
 
+#form_message {
+    background-color: white;
+    border: #86BC25 solid 2px;
+    color: #86BC25;
+    font-weight: bold;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    border-radius: 0;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     #texte_participation {
         font-size: 2vh;
@@ -382,7 +395,7 @@ select:active, select:focus, select:active:focus, select.active:focus {
         left: 50%;
         transform: translateX(-50%);
         width: 80vw;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
         font-size: 2vh;
         color: black;
     }
@@ -433,6 +446,19 @@ select:active, select:focus, select:active:focus, select.active:focus {
         background-color: #9F1A76;
         border: none;
         box-shadow: none;
+    }
+
+    #form_message {
+        background-color: white;
+        border: #86BC25 solid 2px;
+        color: #86BC25;
+        font-weight: bold;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 1vh;
+        border-radius: 0;
+        display: none;
+        font-size: 2vh;
     }
 }
 
