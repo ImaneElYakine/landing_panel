@@ -8,8 +8,13 @@
     url('/font/Mediametrie.woff') format("woff");
 }
 
+* {
+    font-family: 'Mediametrie', sans-serif;
+}
+
 html {
     overflow-x: hidden;
+    font-family: 'Mediametrie', sans-serif;
 }
 
 body {
