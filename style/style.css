@@ -120,6 +120,23 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #accueil_photo {
+        height: 50vh;
+        width: auto;
+    }
+
+    #cercle1, #cercle2 {
+        display: none;
+    }
+
+    #accueil_texte {
+        height: 50vh;
+        padding-top: 15vh;
+        padding-left: 5vh;
+    }
+}
+
 /* VOTRE RÔLE */
 #role {
     background-color: #14A8C6;
