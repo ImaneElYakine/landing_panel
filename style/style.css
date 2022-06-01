@@ -1,11 +1,11 @@
 /* POLICES */
 @font-face {
     font-family: 'Mediametrie';
-    src: url('/font/Mediametrie.otf') format("opentype"),
-    url('/font/Mediametrie.ttf') format("truetype"),
-    url('/font/Mediametrie.eot') format("embedded-opentype"),
-    url('/font/Mediametrie.svg') format("svg"),
-    url('/font/Mediametrie.woff') format("woff");
+    src: url('../font/Mediametrie.otf') format("opentype"),
+    url('../font/Mediametrie.ttf') format("truetype"),
+    url('../font/Mediametrie.eot') format("embedded-opentype"),
+    url('../font/Mediametrie.svg') format("svg"),
+    url('../font/Mediametrie.woff') format("woff");
 }
 
 * {
