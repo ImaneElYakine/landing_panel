@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: Mediametrie, sans-serif;
+    font-family: 'Mediametrie', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
