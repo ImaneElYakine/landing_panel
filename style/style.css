@@ -1,12 +1,19 @@
+/* POLICES */
+@font-face {
+    font-family: 'Mediametrie';
+    src: url('/font/Mediametrie.otf') format("otf"),
+    url('/font/Mediametrie.ttf') format("ttf"),
+    url('/font/Mediametrie.eot') format("eot"),
+    url('/font/Mediametrie.svg') format("svg"),
+    url('/font/Mediametrie.woff') format("woff");
+}
+
 html {
     overflow-x: hidden;
 }
 
-body, * {
-    font-family: Mediametrie, sans-serif !important;
-}
-
 body {
+    font-family: Mediametrie, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
