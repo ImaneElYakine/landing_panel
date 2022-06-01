@@ -2,8 +2,11 @@ html {
     overflow-x: hidden;
 }
 
+body, * {
+    font-family: Mediametrie, sans-serif !important;
+}
+
 body {
-    font-family: Mediametrie, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -99,10 +102,9 @@ body {
     #accueil_texte {
         height: 50vh;
         font-size: 2vh;
-        padding-top: 15vh;
+        padding-top: 18vh;
         padding-left: 5vh;
     }
-
 }
 
 /* VOTRE RÔLE */
