@@ -60,7 +60,7 @@ body {
 }
 
 .nav-item a:hover, .nav-item a:focus {
-    color: #86BC25;
+    color: #82D200;
 }
 
 @media screen and (max-width: 768px) {
@@ -79,7 +79,7 @@ body {
     }
 
     .navbar-toggler {
-        color: #86BC25;
+        color: #82D200;
     }
 }
 
@@ -270,7 +270,7 @@ body {
     }
 
     .swiper-pagination-bullet-active {
-        background-color: #86BC25;
+        background-color: #82D200;
     }
 
     .swiper-slide {
@@ -286,7 +286,7 @@ body {
 #texte_participation {
     font-size: 1.5vw;
     text-align: center;
-    color: #86BC25;
+    color: #82D200;
     font-weight: bold;
     padding-bottom: 5vh;
 }
@@ -396,8 +396,8 @@ select:active, select:focus, select:active:focus, select.active:focus {
 
 #form_message {
     background-color: white;
-    border: #86BC25 solid 2px;
-    color: #86BC25;
+    border: #82D200 solid 2px;
+    color: #82D200;
     font-weight: bold;
     margin-left: 10vh;
     margin-right: 10vh;
@@ -410,7 +410,7 @@ select:active, select:focus, select:active:focus, select.active:focus {
     #texte_participation {
         font-size: 2vh;
         text-align: center;
-        color: #86BC25;
+        color: #82D200;
         font-weight: bold;
         padding-top: 5vh;
         padding-bottom: 5vh;
@@ -482,8 +482,8 @@ select:active, select:focus, select:active:focus, select.active:focus {
 
     #form_message {
         background-color: white;
-        border: #86BC25 solid 2px;
-        color: #86BC25;
+        border: #82D200 solid 2px;
+        color: #82D200;
         font-weight: bold;
         margin-left: 5vh;
         margin-right: 5vh;
@@ -524,6 +524,23 @@ select:active, select:focus, select:active:focus, select.active:focus {
     text-decoration: underline;
 }
 
+#mention_legale_desktop {
+    background-color: #416900;
+    position: absolute;
+    width: 100vw;
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+#mention_legale_mobile {
+    display: none;
+}
+
+#mention_legale_desktop a {
+    color: white;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     #footer_desktop {
         display: none;
@@ -553,6 +570,23 @@ select:active, select:focus, select:active:focus, select.active:focus {
     }
 
     #lien_email_mobile a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #mention_legale_desktop {
+        display: none;
+    }
+
+    #mention_legale_mobile {
+        display: block;
+        background-color: #416900;
+        width: 100vw;
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    #mention_legale_mobile a {
         color: white;
         text-decoration: underline;
     }
