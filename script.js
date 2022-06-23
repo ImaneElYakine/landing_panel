@@ -25,5 +25,6 @@ const swiper = new Swiper('.swiper', {
 let form = document.getElementsByTagName("form")[0];
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    document.getElementById("form_message").style.display = "block";
+    document.getElementById("form_message_info").style.display = "block";
+    document.getElementById("form_message_alert").style.display = "block";
 });
