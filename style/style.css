@@ -367,6 +367,10 @@ select:active, select:focus, select:active:focus, select.active:focus {
     margin-top: 3vh;
 }
 
+#indication_tel {
+    font-size: 1vw;
+}
+
 #bouton {
     margin-top: 3vh;
     position: relative;
@@ -473,7 +477,7 @@ select:active, select:focus, select:active:focus, select.active:focus {
         font-size: 2vh;
     }
 
-    #obligatoire {
+    #obligatoire, #indication_tel {
         font-size: 1.75vh;
     }
 
