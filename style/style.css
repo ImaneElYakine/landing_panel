@@ -561,6 +561,11 @@ select:active, select:focus, select:active:focus, select.active:focus {
     text-align: center;
 }
 
+#mention_legale_desktop a {
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
 #mention_legale_mobile {
     display: none;
 }
